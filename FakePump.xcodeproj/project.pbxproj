@@ -18,6 +18,9 @@
 		956D8E7315CEC20D00E229A2 /* EnterBG.m in Sources */ = {isa = PBXBuildFile; fileRef = 956D8E7215CEC20D00E229A2 /* EnterBG.m */; };
 		956D8E7615CEC4DA00E229A2 /* CorrectionScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 956D8E7515CEC4DA00E229A2 /* CorrectionScreen.m */; };
 		956D8E7915CEC7D600E229A2 /* CarbScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 956D8E7815CEC7D600E229A2 /* CarbScreen.m */; };
+		956D8E7C15CEE40500E229A2 /* BGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 956D8E7B15CEE40500E229A2 /* BGViewController.m */; };
+		956D8E7F15CEE5CB00E229A2 /* CarbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 956D8E7E15CEE5CB00E229A2 /* CarbsViewController.m */; };
+		956D8E8215CEE62100E229A2 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 956D8E8115CEE62100E229A2 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,12 @@
 		956D8E7515CEC4DA00E229A2 /* CorrectionScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorrectionScreen.m; sourceTree = "<group>"; };
 		956D8E7715CEC7D600E229A2 /* CarbScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarbScreen.h; sourceTree = "<group>"; };
 		956D8E7815CEC7D600E229A2 /* CarbScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarbScreen.m; sourceTree = "<group>"; };
+		956D8E7A15CEE40500E229A2 /* BGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGViewController.h; sourceTree = "<group>"; };
+		956D8E7B15CEE40500E229A2 /* BGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGViewController.m; sourceTree = "<group>"; };
+		956D8E7D15CEE5CB00E229A2 /* CarbsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarbsViewController.h; sourceTree = "<group>"; };
+		956D8E7E15CEE5CB00E229A2 /* CarbsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarbsViewController.m; sourceTree = "<group>"; };
+		956D8E8015CEE62100E229A2 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		956D8E8115CEE62100E229A2 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +98,12 @@
 				956D8E6315CEBF5300E229A2 /* FakePumpAppDelegate.h */,
 				956D8E6415CEBF5300E229A2 /* FakePumpAppDelegate.m */,
 				956D8E6615CEBF5300E229A2 /* MainStoryboard.storyboard */,
+				956D8E8015CEE62100E229A2 /* SettingsViewController.h */,
+				956D8E8115CEE62100E229A2 /* SettingsViewController.m */,
+				956D8E7D15CEE5CB00E229A2 /* CarbsViewController.h */,
+				956D8E7E15CEE5CB00E229A2 /* CarbsViewController.m */,
+				956D8E7A15CEE40500E229A2 /* BGViewController.h */,
+				956D8E7B15CEE40500E229A2 /* BGViewController.m */,
 				956D8E7715CEC7D600E229A2 /* CarbScreen.h */,
 				956D8E7815CEC7D600E229A2 /* CarbScreen.m */,
 				956D8E7415CEC4DA00E229A2 /* CorrectionScreen.h */,
@@ -183,6 +198,9 @@
 				956D8E7315CEC20D00E229A2 /* EnterBG.m in Sources */,
 				956D8E7615CEC4DA00E229A2 /* CorrectionScreen.m in Sources */,
 				956D8E7915CEC7D600E229A2 /* CarbScreen.m in Sources */,
+				956D8E7C15CEE40500E229A2 /* BGViewController.m in Sources */,
+				956D8E7F15CEE5CB00E229A2 /* CarbsViewController.m in Sources */,
+				956D8E8215CEE62100E229A2 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
