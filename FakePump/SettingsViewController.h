@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface SettingsViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *sensitivityNumber;
+@property (weak, nonatomic) IBOutlet UITextField *carbRatio;
+@property (weak, nonatomic) IBOutlet UITextField *targetBg;
+@property (weak, nonatomic) IBOutlet UITextField *range;
 
 @end

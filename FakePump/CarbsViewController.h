@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CarbsViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *BgNumber;
+@property (weak, nonatomic) IBOutlet UITextField *CarbNumber;
 
 @end

@@ -76,7 +76,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="5Wb-zf-Gxp">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="unlessEditing" id="5Wb-zf-Gxp">
                                 <rect key="frame" x="62" y="21" width="238" height="31"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -101,6 +101,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="EnterBg" destination="YWa-RA-qiN" eventType="touchUpInside" id="Lro-2s-evC"/>
                                     <segue destination="fru-mv-33f" kind="push" id="B10-gq-wer"/>
                                 </connections>
                             </button>
@@ -156,25 +157,25 @@
                                 <rect key="frame" x="124" y="15" width="176" height="31"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="0OQ-Rd-fYr">
                                 <rect key="frame" x="124" y="66" width="176" height="31"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="dY0-gG-Rzo">
                                 <rect key="frame" x="124" y="111" width="176" height="31"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="pR3-iB-v1u">
                                 <rect key="frame" x="124" y="157" width="176" height="31"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y2X-1J-ZZO">
                                 <rect key="frame" x="20" y="359" width="280" height="37"/>
@@ -187,11 +188,20 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="save:" destination="H21-Jo-UTo" eventType="touchUpInside" id="9x7-kU-FZ7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="d7b-4d-JQa"/>
+                    <connections>
+                        <outlet property="carbRatio" destination="0OQ-Rd-fYr" id="EEU-CB-Be6"/>
+                        <outlet property="range" destination="pR3-iB-v1u" id="woK-wQ-8bz"/>
+                        <outlet property="sensitivityNumber" destination="J6y-9Z-VTh" id="qn0-4S-45n"/>
+                        <outlet property="targetBg" destination="dY0-gG-Rzo" id="SkC-yZ-o4J"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1043" y="1224"/>
@@ -223,13 +233,13 @@
                                 <rect key="frame" x="97" y="15" width="203" height="31"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Oe5-88-ofx">
                                 <rect key="frame" x="97" y="49" width="203" height="31"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6cy-NZ-z6I">
                                 <rect key="frame" x="20" y="359" width="280" height="37"/>
@@ -243,6 +253,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="EnterCarbs:" destination="kBM-bK-37a" eventType="touchUpInside" id="BOK-JC-caH"/>
                                     <segue destination="Ra1-7n-bQK" kind="push" id="CSP-Zw-xhz"/>
                                 </connections>
                             </button>
@@ -250,6 +261,10 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fiq-S2-XvA"/>
+                    <connections>
+                        <outlet property="BgNumber" destination="bpP-fY-kLg" id="m5w-Cd-o2K"/>
+                        <outlet property="CarbNumber" destination="Oe5-88-ofx" id="x3l-0s-zEH"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1043" y="644"/>
@@ -312,12 +327,24 @@
         </class>
         <class className="CarbsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CarbsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="EnterCarbs:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="BgNumber" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="CarbNumber" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="FakePumpViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FakePumpViewController.h"/>
         </class>
         <class className="SettingsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="save:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="carbRatio" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="range" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="sensitivityNumber" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="targetBg" candidateClass="UITextField"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -8,11 +8,15 @@
 
 #import "SettingsViewController.h"
 
-@interface SettingsViewController ()
+@interface SettingsViewController () <UITextFieldDelegate>
 
 @end
 
 @implementation SettingsViewController
+@synthesize sensitivityNumber;
+@synthesize carbRatio;
+@synthesize targetBg;
+@synthesize range;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,11 +30,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+  sensitivityNumber.delegate = self;
+  carbRatio.delegate = self;
+  targetBg.delegate = self;
+  range.delegate = self;
 }
 
 - (void)viewDidUnload
 {
+    [self setSensitivityNumber:nil];
+    [self setCarbRatio:nil];
+    [self setTargetBg:nil];
+    [self setRange:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -40,4 +51,15 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+  if( textField == sensitivityNumber) [sensitivityNumber resignFirstResponder];
+  if( textField == carbRatio) [carbRatio resignFirstResponder];
+  if( textField == targetBg) [targetBg resignFirstResponder];
+  if( textField == range) [range resignFirstResponder];
+  
+  return YES;
+}
+
+- (IBAction)save:(UIButton*)sender {
+}
 @end

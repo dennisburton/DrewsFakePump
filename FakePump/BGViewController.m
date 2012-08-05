@@ -8,7 +8,7 @@
 
 #import "BGViewController.h"
 
-@interface BGViewController ()
+@interface BGViewController () <UITextFieldDelegate>
 
 @end
 
@@ -19,5 +19,21 @@
 {
   return YES;// (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+- (void)viewDidLoad
+{
+  [super viewDidLoad];
+	BgNumber.delegate = self;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+  if( textField == BgNumber) [BgNumber resignFirstResponder];
+  return YES;
+}
+- (IBAction)EnterBg {
+  // create the bg model
+  // call the seque to the results screen
+}
+
 
 @end
