@@ -285,12 +285,20 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Insulin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="HpN-to-ABW">
+                                <rect key="frame" x="20" y="127" width="280" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ot2-AV-zXd"/>
                     <connections>
                         <outlet property="resultText" destination="6cy-nJ-RnR" id="bYj-1n-jge"/>
+                        <outlet property="typeText" destination="HpN-to-ABW" id="0xj-lo-EIQ"/>
                     </connections>
                 </viewController>
             </objects>
@@ -315,6 +323,42 @@
             <point key="canvasLocation" x="61" y="113"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="BGViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BGViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="BgNumber" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="CarbsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CarbsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="EnterCarbs:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="BgNumber" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="CarbNumber" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="FakePumpViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FakePumpViewController.h"/>
+        </class>
+        <class className="ResultsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ResultsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="resultText" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="typeText" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SettingsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="save:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="carbRatio" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="range" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="sensitivityNumber" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="targetBg" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

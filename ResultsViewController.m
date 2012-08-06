@@ -14,6 +14,7 @@
 
 @implementation ResultsViewController
 @synthesize resultText;
+@synthesize typeText;
 @synthesize numberData;
 
 -(void)setNumbers:(Numbers *)numbers {
@@ -33,13 +34,27 @@
 {
     [super viewDidLoad];
   double bgNumber = [numberData.BgNumber doubleValue];
+  double carbs = [numberData.Carbs doubleValue];
   double target = [numberData.TargetBg doubleValue];
   double sensitivity = [numberData.Sensitivity doubleValue];
+  double carbRatio = [numberData.CarbRatio doubleValue];
+  
   
   double correctionAmount = bgNumber - target;
+  double unitsCorrection = correctionAmount/sensitivity;
+  
+  double carbsBolus = carbs/carbRatio;
+  double totalAmount = unitsCorrection + carbsBolus;
+  
   double correction = 0.0;
-  if( correctionAmount > 0 ){
-    correction = correctionAmount/sensitivity;
+  if( totalAmount > 0 ){
+    correction = totalAmount;
+    typeText.text = @"Insulin";
+  }
+  else {
+    correction = -1 * totalAmount * carbRatio;
+    
+    typeText.text = @"Carbs";
   }
   
   
@@ -52,6 +67,7 @@
 - (void)viewDidUnload
 {
     [self setResultText:nil];
+  [self setTypeText:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

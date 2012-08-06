@@ -12,5 +12,6 @@
 @interface ResultsViewController : UIViewController
 -(void)setNumbers:(Numbers *)numbers;
 @property (weak, nonatomic) IBOutlet UILabel *resultText;
+@property (weak, nonatomic) IBOutlet UILabel *typeText;
 
 @end
