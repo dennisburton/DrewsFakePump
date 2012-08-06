@@ -7,6 +7,8 @@
 //
 
 #import "CarbsViewController.h"
+#import "Numbers.h"
+#import "ResultsViewController.h"
 
 @interface CarbsViewController () <UITextFieldDelegate>
 
@@ -54,6 +56,18 @@
 }
 
 - (IBAction)EnterCarbs:(UIButton *)sender {
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  Numbers *numbers = [[Numbers alloc] init];
+  
+  NSNumberFormatter *formatter = [[NSNumberFormatter alloc]init];
+  [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
+  
+  numbers.BgNumber = [formatter numberFromString:BgNumber.text];
+  numbers.Carbs = [formatter numberFromString:CarbNumber.text];
+  
+  [segue.destinationViewController setNumbers:numbers];
 }
 
 @end

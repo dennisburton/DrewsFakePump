@@ -7,6 +7,9 @@
 //
 
 #import "BGViewController.h"
+#import "Numbers.h"
+#import "ResultsViewController.h"
+
 
 @interface BGViewController () <UITextFieldDelegate>
 
@@ -30,9 +33,21 @@
   if( textField == BgNumber) [BgNumber resignFirstResponder];
   return YES;
 }
+
 - (IBAction)EnterBg {
   // create the bg model
   // call the seque to the results screen
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  Numbers *numbers = [[Numbers alloc] init];
+
+  NSNumberFormatter *formatter = [[NSNumberFormatter alloc]init];
+  [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
+  
+  numbers.BgNumber = [formatter numberFromString:BgNumber.text];
+  
+  [segue.destinationViewController setNumbers:numbers];
 }
 
 

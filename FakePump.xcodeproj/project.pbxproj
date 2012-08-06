@@ -21,6 +21,8 @@
 		956D8E7C15CEE40500E229A2 /* BGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 956D8E7B15CEE40500E229A2 /* BGViewController.m */; };
 		956D8E7F15CEE5CB00E229A2 /* CarbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 956D8E7E15CEE5CB00E229A2 /* CarbsViewController.m */; };
 		956D8E8215CEE62100E229A2 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 956D8E8115CEE62100E229A2 /* SettingsViewController.m */; };
+		956D8E8D15CF1F4C00E229A2 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 956D8E8C15CF1F4C00E229A2 /* ResultsViewController.m */; };
+		956D8E9015CF202800E229A2 /* Numbers.m in Sources */ = {isa = PBXBuildFile; fileRef = 956D8E8F15CF202800E229A2 /* Numbers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,10 @@
 		956D8E7E15CEE5CB00E229A2 /* CarbsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarbsViewController.m; sourceTree = "<group>"; };
 		956D8E8015CEE62100E229A2 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		956D8E8115CEE62100E229A2 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		956D8E8B15CF1F4C00E229A2 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultsViewController.h; path = ../ResultsViewController.h; sourceTree = "<group>"; };
+		956D8E8C15CF1F4C00E229A2 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultsViewController.m; path = ../ResultsViewController.m; sourceTree = "<group>"; };
+		956D8E8E15CF202800E229A2 /* Numbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Numbers.h; sourceTree = "<group>"; };
+		956D8E8F15CF202800E229A2 /* Numbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Numbers.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,8 @@
 		956D8E5A15CEBF5300E229A2 /* FakePump */ = {
 			isa = PBXGroup;
 			children = (
+				956D8E8C15CF1F4C00E229A2 /* ResultsViewController.m */,
+				956D8E8B15CF1F4C00E229A2 /* ResultsViewController.h */,
 				956D8E6315CEBF5300E229A2 /* FakePumpAppDelegate.h */,
 				956D8E6415CEBF5300E229A2 /* FakePumpAppDelegate.m */,
 				956D8E6615CEBF5300E229A2 /* MainStoryboard.storyboard */,
@@ -113,6 +121,8 @@
 				956D8E6915CEBF5300E229A2 /* FakePumpViewController.h */,
 				956D8E6A15CEBF5300E229A2 /* FakePumpViewController.m */,
 				956D8E5B15CEBF5300E229A2 /* Supporting Files */,
+				956D8E8E15CF202800E229A2 /* Numbers.h */,
+				956D8E8F15CF202800E229A2 /* Numbers.m */,
 			);
 			path = FakePump;
 			sourceTree = "<group>";
@@ -201,6 +211,8 @@
 				956D8E7C15CEE40500E229A2 /* BGViewController.m in Sources */,
 				956D8E7F15CEE5CB00E229A2 /* CarbsViewController.m in Sources */,
 				956D8E8215CEE62100E229A2 /* SettingsViewController.m in Sources */,
+				956D8E8D15CF1F4C00E229A2 /* ResultsViewController.m in Sources */,
+				956D8E9015CF202800E229A2 /* Numbers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +328,7 @@
 				956D8E7015CEBF5300E229A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
